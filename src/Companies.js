@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Search from "./Search";
 import CompanyCard from "./CompanyCard";
 import JoblyApi from "./JoblyApi";
-import { Redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import UserContext from './UserContext';
 
 class Companies extends Component {
@@ -48,7 +48,7 @@ class Companies extends Component {
       return <p>Loading...</p>
     } else {
       if (!currUser) {
-        return <Redirect to={{
+        return <Navigate to={{
           pathname: '/login',
           state: { needsLogin: true }
         }} />

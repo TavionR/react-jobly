@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./Nav";
+const jwt = require('jsonwebtoken');
 import Routes from "./Routes";
 import JoblyApi from "./JoblyApi";
 import UserContext from "./UserContext";
