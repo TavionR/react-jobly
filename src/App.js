@@ -3,11 +3,8 @@ import './App.css';
 import { BrowserRouter } from "react-router-dom";
 import Nav from "./Nav";
 import Routes from "./Routes";
-import jwt from "jsonwebtoken";
 import JoblyApi from "./JoblyApi";
 import UserContext from "./UserContext";
-
-
 class App extends Component {
   constructor(props) {
     super(props);
